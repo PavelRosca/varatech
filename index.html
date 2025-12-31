@@ -1,16 +1,216 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ro">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Varatech - Soluții digitale pentru afaceri mici</title>
+  <meta name="description" content="Servicii moderne: creare site-uri și aplicații web, SEO, Google Ads, social media, foto-video, CCTV, rețele, smart home și multe altele pentru IMM-uri din România.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome</h1>
-        <p>Build something amazing today</p>
-        <a href="#" class="button">Get Started</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#">Varatech</a>
+      <nav class="nav" id="main-nav">
+        <a href="#servicii">Servicii</a>
+        <a href="#portofoliu">Portofoliu</a>
+        <a href="#despre">Despre</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Meniu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <h1>Soluții digitale și tehnice pentru afaceri mici</h1>
+          <p>Website-uri, aplicații web, marketing digital, securitate, automatizări și suport IT — tot ce ai nevoie pentru a crește eficient și local, azi.</p>
+          <div class="hero-ctas">
+            <a href="#contact" class="btn primary">Solicită ofertă</a>
+            <a href="#servicii" class="btn outline">Vezi servicii</a>
+          </div>
+        </div>
+        <div class="hero-illustration" aria-hidden="true">
+          <!-- Simple illustrative SVG -->
+          <svg width="360" height="260" viewBox="0 0 360 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="360" height="260" rx="20" fill="url(#g)" />
+            <defs>
+              <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#667eea"/>
+                <stop offset="1" stop-color="#764ba2"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicii" class="services">
+      <div class="container">
+        <h2>Servicii</h2>
+        <p class="lead">Oferim un pachet complet pentru prezența și dezvoltarea afacerii tale locale.</p>
+        <div class="grid services-grid">
+          <article class="card">
+            <div class="icon">💻</div>
+            <h3>Creare site & aplicații web</h3>
+            <p>Website-uri moderne, responsive și aplicații personalizate pentru vânzări și rezervări.</p>
+          </article>
+
+          <article class="card">
+            <div class="icon">📅</div>
+            <h3>Sisteme de rezervări</h3>
+            <p>Solutii intuitive pentru programări online, gestionare clienți și sincronizare calendar.</p>
+          </article>
+
+          <article class="card">
+            <div class="icon">🔍</div>
+            <h3>Optimizare SEO & UX</h3>
+            <p>Căutăm vizibilitate locală și o experiență clară pentru clienții tăi.</p>
+          </article>
+
+          <article class="card">
+            <div class="icon">📣</div>
+            <h3>Promovare Google Ads & Social</h3>
+            <p>Campanii eficiente, orientate spre rezultate și clienți locali.</p>
+          </article>
+
+          <article class="card">
+            <div class="icon">🎥</div>
+            <h3>Servicii foto & video</h3>
+            <p>Conținut profesional pentru site și social media—prezentare atractivă a afacerii.</p>
+          </article>
+
+          <article class="card">
+            <div class="icon">🛠️</div>
+            <h3>Suport IT & Configurații PC</h3>
+            <p>Administrare rețele, PC-uri, backup și intervenție rapidă on-site sau remote.</p>
+          </article>
+
+          <article class="card">
+            <div class="icon">📱</div>
+            <h3>Meniuri digitale cu QR</h3>
+            <p>Solutii moderne pentru restaurante și locații, fără hârtie și ușor de actualizat.</p>
+          </article>
+
+          <article class="card">
+            <div class="icon">🔒</div>
+            <h3>Instalare CCTV & Retele</h3>
+            <p>Instalare camere, rețele cablate și wireless, monitorizare și securitate.</p>
+          </article>
+
+          <article class="card">
+            <div class="icon">🏠</div>
+            <h3>Smart Home & Multimedia</h3>
+            <p>Automatizări, audio-video și soluții multimedia pentru spații comerciale sau locuințe.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="despre" class="about">
+      <div class="container">
+        <h2>Despre noi</h2>
+        <p>Suntem o echipă dedicată implementării de soluții practice și accesibile pentru IMM-uri din România. Ne adaptăm la buget și nevoile tale, cu livrări rapide și suport continuu.</p>
+        <div class="grid features">
+          <div class="feature">
+            <h4>Local și rapid</h4>
+            <p>Înțelegem piața locală și acționăm rapid pentru rezultate vizibile.</p>
+          </div>
+          <div class="feature">
+            <h4>Personalizare</h4>
+            <p>Fiecare proiect e creat în funcție de nevoile reale ale afacerii tale.</p>
+          </div>
+          <div class="feature">
+            <h4>Suport continuu</h4>
+            <p>Rămânem alături după lansare: actualizări, mentenanță și optimizări.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portofoliu" class="portfolio">
+      <div class="container">
+        <h2>Portofoliu</h2>
+        <p class="lead">Proiecte recente — rezultate pe care le văd clienții noștri.</p>
+        <div class="grid portfolio-grid">
+          <div class="thumb">Proiect 1</div>
+          <div class="thumb">Proiect 2</div>
+          <div class="thumb">Proiect 3</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <p class="lead">Disponibili pentru consultanță rapidă — cere oferta azi.</p>
+        <form id="contact-form" class="contact-form">
+          <div class="form-row">
+            <label for="name">Nume</label>
+            <input id="name" name="name" type="text" placeholder="Nume și prenume" required>
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="ex: nume@exemplu.ro" required>
+          </div>
+          <div class="form-row">
+            <label for="phone">Telefon</label>
+            <input id="phone" name="phone" type="tel" placeholder="07xx xxx xxx">
+          </div>
+          <div class="form-row">
+            <label for="service">Serviciu</label>
+            <select id="service" name="service">
+              <option>Creare site</option>
+              <option>Sisteme rezervări</option>
+              <option>SEO & UX</option>
+              <option>Google Ads & Social</option>
+              <option>Foto & Video</option>
+              <option>Suport IT</option>
+              <option>Instalare CCTV</option>
+              <option>Altele</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="message">Mesaj</label>
+            <textarea id="message" name="message" rows="4" placeholder="Spune-ne cu ce te putem ajuta..."></textarea>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="btn primary">Trimite</button>
+            <a href="mailto:contact@varatech.ro" class="btn outline">Email: contact@varatech.ro</a>
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <strong>Varatech</strong>
+          <p>Solutii digitale pentru IMM-uri • România</p>
+        </div>
+        <div>
+          <p>Telefon: <a href="tel:+40000000000">07xx xxx xxx</a></p>
+          <p>Email: <a href="mailto:contact@varatech.ro">contact@varatech.ro</a></p>
+        </div>
+        <div>
+          <p>Urmărește-ne:</p>
+          <p><a href="#">Facebook</a> • <a href="#">Instagram</a></p>
+        </div>
+      </div>
+      <p class="muted">© <span id="year"></span> Varatech — Toate drepturile rezervate</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
 </body>
 </html>
