@@ -31,7 +31,7 @@ Pentru ca formularul să trimită email-uri automat:
 
 1. Înregistrează-te pe [EmailJS](https://www.emailjs.com/).
 2. Creează un serviciu de email (ex: Gmail) și obține Service ID (`service_oi33mbj`).
-3. Creează un template de email cu variabilele: `{{name}}`, `{{email}}`, `{{phone}}`, `{{service}}`, `{{message}}`. Setează destinatarul la `pavelrosca@yahoo.com`.
+3. Creează un template de email cu variabilele: `{{name}}`, `{{email}}`, `{{phone}}`, `{{service}}`, `{{message}}`. Setează destinatarul la `pavelrosca@yahoo.com`. 
 4. Obține Template ID (`template_cg1uwn3`) și Public Key (`S15vBRm9ZaDcrZRVx`).
 5. Dacă ID-urile sunt diferite, înlocuiește-le în `main.js`.
 
