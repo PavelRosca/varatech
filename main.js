@@ -31,7 +31,16 @@ document.addEventListener('DOMContentLoaded', function(){
         alert('Serviciul de email nu este disponibil. Încearcă mai târziu.');
         return;
       }
-      emailjs.sendForm('service_oi33mbj', 'template_cg1uwn3', this)
+      var formData = new FormData(form);
+      var data = {
+        name: formData.get('name'),
+        email: formData.get('email'),
+        phone: formData.get('phone'),
+        service: formData.get('service'),
+        message: formData.get('message'),
+        time: new Date().toLocaleString()
+      };
+      emailjs.send('service_oi33mbj', 'template_cg1uwn3', data)
         .then(function() {
           alert('Mesajul a fost trimis cu succes!');
           form.reset();
