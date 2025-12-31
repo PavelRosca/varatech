@@ -40,11 +40,14 @@ document.addEventListener('DOMContentLoaded', function(){
         message: formData.get('message'),
         time: new Date().toLocaleString()
       };
+      console.log('Sending data:', data);
       emailjs.send('service_oi33mbj', 'template_cg1uwn3', data)
-        .then(function() {
+        .then(function(response) {
+          console.log('Success:', response);
           alert('Mesajul a fost trimis cu succes!');
           form.reset();
         }, function(error) {
+          console.error('Error:', error);
           alert('Eroare la trimiterea mesajului: ' + error.text);
         });
     });
