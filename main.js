@@ -25,8 +25,11 @@ document.addEventListener('DOMContentLoaded', function(){
   // Formular - trimite prin EmailJS
   var form = document.getElementById('contact-form');
   if(form){
+    console.log('Form found');
     form.addEventListener('submit', function(e){
+      console.log('Submit event triggered');
       e.preventDefault();
+      console.log('EmailJS loaded:', typeof emailjs);
       if (typeof emailjs === 'undefined') {
         alert('Serviciul de email nu este disponibil. Încearcă mai târziu.');
         return;
