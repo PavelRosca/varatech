@@ -1,4 +1,4 @@
-// main.js - meniu mobil și trimitere formular prin mailto
+// main.js - meniu mobil și trimitere formular prin EmailJS
 document.addEventListener('DOMContentLoaded', function(){
   // Anul curent în footer
   var y = document.getElementById('year');
@@ -17,26 +17,21 @@ document.addEventListener('DOMContentLoaded', function(){
     });
   }
 
-  // Formular - construiește mailto
+  // Inițializează EmailJS
+  emailjs.init('S15vBRm9ZaDcrZRVx');
+
+  // Formular - trimite prin EmailJS
   var form = document.getElementById('contact-form');
   if(form){
     form.addEventListener('submit', function(e){
       e.preventDefault();
-      var name = encodeURIComponent(document.getElementById('name').value || '');
-      var email = encodeURIComponent(document.getElementById('email').value || '');
-      var phone = encodeURIComponent(document.getElementById('phone').value || '');
-      var service = encodeURIComponent(document.getElementById('service').value || '');
-      var message = encodeURIComponent(document.getElementById('message').value || '');
-
-      var subject = encodeURIComponent('Cerere ofertă: ' + service + ' — ' + (document.getElementById('name').value || ''));
-      var body = 'Nume: ' + decodeURIComponent(name) + '\n';
-      body += 'Email: ' + decodeURIComponent(email) + '\n';
-      body += 'Telefon: ' + decodeURIComponent(phone) + '\n';
-      body += 'Serviciu: ' + decodeURIComponent(service) + '\n\n';
-      body += 'Mesaj:\n' + decodeURIComponent(message);
-
-      var mailto = 'mailto:contact@varatech.ro?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
-      window.location.href = mailto;
+      emailjs.sendForm('service_oi33mbj', 'template_cg1uwn3', this)
+        .then(function() {
+          alert('Mesajul a fost trimis cu succes!');
+          form.reset();
+        }, function(error) {
+          alert('Eroare la trimiterea mesajului: ' + JSON.stringify(error));
+        });
     });
   }
 });
