@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
 // Formular - trimite prin EmailJS
 var form = document.getElementById('contact-form');
+var btn = document.querySelector('#contact-form button[type="submit"]');
 if(form){
 
   console.log('Form found');
@@ -32,24 +33,18 @@ if(form){
       alert('Serviciul de email nu este disponibil. Încearcă mai târziu.');
       return;
     }
-    var formData = new FormData(form);
-    var data = {
-      name: formData.get('name'),
-      email: formData.get('email'),
-      phone: formData.get('phone'),
-      service: formData.get('service'),
-      message: formData.get('message'),
-      time: new Date().toLocaleString()
-    };
-    console.log('Sending data:', data);
-    emailjs.send('service_oi33mbj', 'template_cg1uwn3', data)
+    if(btn) btn.textContent = 'Se trimite...';
+
+    emailjs.sendForm('service_oi33mbj', 'template_cg1uwn3', form)
       .then(function(response) {
         console.log('Success:', response);
         alert('Mesajul a fost trimis cu succes!');
         form.reset();
+        if(btn) btn.textContent = 'Trimite';
       }, function(error) {
         console.error('Error:', error);
-        alert('Eroare la trimiterea mesajului: ' + error.text);
+        alert('Eroare la trimiterea mesajului: ' + JSON.stringify(error));
+        if(btn) btn.textContent = 'Trimite';
       });
   });
 }
