@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
   // Inițializează EmailJS
   if (typeof emailjs !== 'undefined') {
-    emailjs.init({publicKey: 'S15vBRm9ZaDcrZRVx'});
+    emailjs.init({publicKey: '06xU3LVx1te-rWvgG'});
   }
 });
 
