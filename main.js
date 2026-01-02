@@ -19,13 +19,14 @@ document.addEventListener('DOMContentLoaded', function(){
 
   // Inițializează EmailJS
   if (typeof emailjs !== 'undefined') {
-    emailjs.init('S15vBRm9ZaDcrZRVx');
+    emailjs.init({publicKey: 'S15vBRm9ZaDcrZRVx'});
   }
 });
 
 // Formular - trimite prin EmailJS
 var form = document.getElementById('contact-form');
 if(form){
+
   console.log('Form found');
   form.addEventListener('submit', function(e){
     console.log('Submit event triggered');
@@ -45,7 +46,7 @@ if(form){
       time: new Date().toLocaleString()
     };
     console.log('Sending data:', data);
-    emailjs.send('service_oi33mbj', 'template_cg1uwn3', data.name, data.email, data.phone, data.service, data.message, data.time)
+    emailjs.send('service_oi33mbj', 'template_cg1uwn3', data)
       .then(function(response) {
         console.log('Success:', response);
         alert('Mesajul a fost trimis cu succes!');
