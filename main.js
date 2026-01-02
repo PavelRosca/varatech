@@ -17,10 +17,6 @@ document.addEventListener('DOMContentLoaded', function(){
     });
   }
 
-  // Inițializează EmailJS
-  if (typeof emailjs !== 'undefined') {
-    emailjs.init({publicKey: '06xU3LVx1te-rWvgG'});
-  }
 });
 
 // Formular - trimite prin EmailJS
