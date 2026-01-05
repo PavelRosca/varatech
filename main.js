@@ -48,3 +48,21 @@ if(form){
       });
   });
 }
+
+// Service cards expansion
+document.querySelectorAll('.details-btn').forEach(btn => {
+  btn.addEventListener('click', function() {
+    const card = this.closest('.card');
+    const isExpanded = card.classList.contains('expanded');
+    
+    if (!isExpanded) {
+      // Close all expanded cards
+      document.querySelectorAll('.card.expanded').forEach(c => {
+        c.classList.remove('expanded');
+      });
+      
+      card.classList.add('expanded');
+    }
+    // If already expanded, do nothing (stay open)
+  });
+});
