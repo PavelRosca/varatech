@@ -1,46 +1,39 @@
-# Varatech
+# Varatech – Website Oficial
 
-Website-ul oficial al Varatech, oferind servicii digitale și tehnice moderne pentru afaceri mici din România.
+Varatech este o platformă digitală dedicată afacerilor mici și locale din România, oferind soluții moderne pentru dezvoltarea și optimizarea prezenței online și tehnice.
 
-## Despre
+Website-ul este realizat într-un stil minimalist și modern, este ușor de utilizat și este disponibil integral în limba română.
 
-Varatech oferă soluții complete pentru prezența și dezvoltarea afacerii tale locale, inclusiv:
-- Creare site-uri și aplicații web
-- Sisteme de rezervări
-- Optimizare SEO și UX
-- Promovare Google Ads și social media
-- Servicii foto și video
-- Suport IT și configurații PC
-- Meniuri digitale cu QR
-- Instalare CCTV și rețele
-- Smart home și multimedia
-- Soluții de digitalizare pentru eficiență
+## Despre proiect
 
-Website-ul este minimalist, modern și realizat integral în limba română.
+Acest proiect are rolul de a prezenta serviciile oferite de Varatech și de a facilita contactul direct cu potențialii clienți printr-un formular simplu și eficient.
 
-## Tehnologii
+## Servicii prezentate
 
-- HTML5
-- CSS3
-- JavaScript
-- EmailJS pentru formulare
+- Creare site-uri și aplicații web  
+- Sisteme de rezervări online  
+- Optimizare SEO și UX  
+- Promovare Google Ads și social media  
+- Servicii foto și video  
+- Suport IT și configurații PC  
+- Meniuri digitale cu cod QR  
+- Instalare sisteme CCTV și rețele  
+- Soluții smart home și multimedia  
+- Digitalizare pentru eficiența afacerilor  
 
-## Configurare EmailJS
+## Tehnologii utilizate
 
-Pentru ca formularul să trimită email-uri automat:
-
-1. Înregistrează-te pe [EmailJS](https://www.emailjs.com/).
-2. Creează un serviciu de email (ex: Gmail) și obține Service ID (`service_oi33mbj`).
-3. Creează un template de email cu variabilele: `{{name}}`, `{{email}}`, `{{phone}}`, `{{service}}`, `{{message}}`. Setează destinatarul la `pavelrosca@yahoo.com`. 
-4. Obține Template ID (`template_cg1uwn3`) și Public Key (`S15vBRm9ZaDcrZRVx`).
-5. Dacă ID-urile sunt diferite, înlocuiește-le în `main.js`.
-
-**Notă securitate:** Cheile EmailJS sunt publice și pot fi văzute în codul sursă. Nu expun parole sau informații sensibile.
+- HTML5  
+- CSS3  
+- JavaScript  
+- EmailJS pentru formulare de contact  
 
 ## Funcționalități
 
-Formularul de contact trimite email-uri automat folosind EmailJS, fără a deschide clientul de email.
+- Design responsive  
+- Formular de contact funcțional fără backend  
+- Structură simplă și încărcare rapidă  
 
 ## Deploy
 
-Acest site este găzduit pe GitHub Pages.
+Site-ul este găzduit folosind GitHub Pages.
