@@ -58,7 +58,7 @@ document.querySelectorAll('.details-btn').forEach(btn => {
     if (isExpanded) {    
       card.classList.remove('expanded');
     } else {
-      document.querySelectorAll('.card.expanded')
+      document.querySelectorAll('.card.expanded, .portfolio-card.expanded')
       .forEach(c => c.classList.remove('expanded'));
       card.classList.add('expanded');
     }
